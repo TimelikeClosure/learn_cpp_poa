@@ -15,7 +15,15 @@ int main(void){
     y = x ^ y;
     x = x ^ y;
 
-    cout << endl << "Swapped values:" << endl;
+    cout << endl << "Swapped values (using xor):" << endl;
+    cout << "x = " << x << endl;
+    cout << "y = " << y << endl;
+
+    x = x - y;
+    y = y + x;
+    x = -x + y;
+
+    cout << endl << "Swapped again values (using math operatios):" << endl;
     cout << "x = " << x << endl;
     cout << "y = " << y << endl;
 
